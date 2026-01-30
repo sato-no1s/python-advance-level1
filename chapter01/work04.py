@@ -5,4 +5,12 @@ person = {
     "age" : 15,
 }
 
+try :
+    print(person["hobby"])
+except KeyError as e:
+    print("存在しないキーを指定しました:" + str(e))
+else:
+    print("キーが存在します")
+finally:
+    print("必ず実行します")
 
